@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rxnkinetics"
+version = "1.0.0"
+description = "A Python CLI toolkit for chemical reaction kinetics analysis"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "Emre Yilmaz", email = "emreyilmazch@gmail.com"},
+]
+keywords = ["chemistry", "kinetics", "reaction", "ODE", "arrhenius", "half-life"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+]
+dependencies = [
+    "numpy>=1.20",
+    "scipy>=1.7",
+    "matplotlib>=3.4",
+]
+
+[project.urls]
+Homepage = "https://github.com/emreyilmazcode/ReactionKinetics"
+Repository = "https://github.com/emreyilmazcode/ReactionKinetics"
+Issues = "https://github.com/emreyilmazcode/ReactionKinetics/issues"
+
+[project.scripts]
+rxnkinetics = "rxnkinetics.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["rxnkinetics*"]
