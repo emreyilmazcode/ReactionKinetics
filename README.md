@@ -2,6 +2,7 @@
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![PyPI version](https://img.shields.io/pypi/v/rxnkinetics.svg)](https://pypi.org/project/rxnkinetics/)
 
 A Python CLI toolkit for **chemical reaction kinetics** analysis. Solve rate equations, fit experimental data, determine reaction orders, and perform Arrhenius analysis — all from the command line.
 
@@ -18,6 +19,14 @@ A Python CLI toolkit for **chemical reaction kinetics** analysis. Solve rate equ
 
 ## Installation
 
+Install directly from PyPI:
+
+```bash
+pip install rxnkinetics
+```
+
+Or install from source for development:
+
 ```bash
 git clone https://github.com/emreyilmazcode/ReactionKinetics.git
 cd ReactionKinetics
@@ -28,12 +37,6 @@ After installation, `rxnkinetics` is available as a command:
 
 ```bash
 rxnkinetics solve --order 1 --x0 1.0 --k 0.1 --t 50
-```
-
-Or run directly without installing:
-
-```bash
-python -m rxnkinetics.cli solve --order 1 --x0 1.0 --k 0.1 --t 50
 ```
 
 ## Quick Start
